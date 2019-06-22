@@ -2,7 +2,14 @@
   "name": "koa-jayson-rpc",
   "version": "0.0.1",
   "description": "koa json rpc powered by jayson",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "mocha",
     "test-cover": "nyc --reporter=lcov --reporter=text mocha",
@@ -24,16 +31,29 @@
     "url": "https://github.com/magicdawn/koa-jayson-rpc/issues"
   },
   "homepage": "https://github.com/magicdawn/koa-jayson-rpc#readme",
+  "dependencies": {
+    "jayson": "^3.0.2",
+    "lodash": "^4.17.11",
+    "require-directory": "^2.1.1",
+    "uuid": "^3.3.2"
+  },
   "devDependencies": {
     "codecov": "^3.3.0",
     "eslint": "^5.16.0",
     "eslint-plugin-magicdawn": "^0.0.5",
+    "husky": "latest",
+    "impress-router": "^1.6.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-mount": "^4.0.0",
+    "koa-onerror": "^4.1.0",
+    "koa-qs": "^2.0.0",
+    "lint-staged": "latest",
     "mocha": "^6.1.4",
     "nyc": "^14.0.0",
-    "should": "^13.2.3",
-    "husky": "latest",
     "prettier": "latest",
-    "lint-staged": "latest"
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
   },
   "husky": {
     "hooks": {
